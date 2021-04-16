@@ -29,7 +29,7 @@ namespace Reflection.Tasks
             ParameterExpression array1 = Expression.Parameter(typeof(T[]), "array1");
             ParameterExpression array2 = Expression.Parameter(typeof(T[]), "array2");
 
-            ParameterExpression index = Expression.Parameter(typeof(int), "ind");
+            ParameterExpression index = Expression.Variable(typeof(int), "ind");
 
             BinaryExpression elementArray1 = Expression.ArrayIndex(array1, index);
             BinaryExpression elementArray2 = Expression.ArrayIndex(array2, index);
