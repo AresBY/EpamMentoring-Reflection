@@ -20,6 +20,7 @@ namespace Reflection.Tests
 
             var func = CodeGeneration.GetVectorMultiplyFunction<int>();
             var actual = func(first, second);
+
             Assert.AreEqual(expected, actual);
         }
 

@@ -19,6 +19,14 @@ namespace TestProject
             t.SetProperty_Should_Assign_Value_For_Single_Public_Path();
             t.GetProperty_Should_Assign_Value_For_Complex_Path();
             t.SetProperty_Should_Assign_Value_For_Single_Private_Path();
+            CodeGenerationTests cg = new CodeGenerationTests();
+            cg.GetVectorMultiplyFunction_Returns_Function_For_Int();
+            cg.GetVectorMultiplyFunction_Returns_Function_For_Long();
+            cg.GetVectorMultiplyFunction_Returns_Function_For_Double();
+            cg.CodeGeneration_PerformanceTest();
+
+            Console.WriteLine("Press any key");
+            Console.ReadKey();
         }
     }
 }
